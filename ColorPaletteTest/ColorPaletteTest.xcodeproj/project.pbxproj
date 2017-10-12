@@ -13,6 +13,7 @@
 		674E169B1F8FAD6D00C481CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 674E169A1F8FAD6D00C481CA /* Assets.xcassets */; };
 		674E169E1F8FAD6D00C481CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 674E169C1F8FAD6D00C481CA /* LaunchScreen.storyboard */; };
 		674E16A81F8FB51A00C481CA /* SHTColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674E16A71F8FB51A00C481CA /* SHTColorViewController.swift */; };
+		674E16AA1F90164900C481CA /* ColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674E16A91F90164900C481CA /* ColorPicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		674E169D1F8FAD6D00C481CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		674E169F1F8FAD6D00C481CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		674E16A71F8FB51A00C481CA /* SHTColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHTColorViewController.swift; sourceTree = "<group>"; };
+		674E16A91F90164900C481CA /* ColorPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		674E16921F8FAD6D00C481CA /* ColorPaletteTest */ = {
 			isa = PBXGroup;
 			children = (
+				674E16A91F90164900C481CA /* ColorPicker.swift */,
 				674E16A71F8FB51A00C481CA /* SHTColorViewController.swift */,
 				674E16931F8FAD6D00C481CA /* AppDelegate.swift */,
 				674E16951F8FAD6D00C481CA /* ViewController.swift */,
@@ -140,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				674E16961F8FAD6D00C481CA /* ViewController.swift in Sources */,
+				674E16AA1F90164900C481CA /* ColorPicker.swift in Sources */,
 				674E16A81F8FB51A00C481CA /* SHTColorViewController.swift in Sources */,
 				674E16941F8FAD6D00C481CA /* AppDelegate.swift in Sources */,
 			);

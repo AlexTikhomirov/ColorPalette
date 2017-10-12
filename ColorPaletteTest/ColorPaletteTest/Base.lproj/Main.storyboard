@@ -79,28 +79,28 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DXp-OO-BIi">
                                         <rect key="frame" x="220" y="16" width="170" height="226"/>
                                         <subviews>
-                                            <slider opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="100" minValue="0.0" maxValue="254" translatesAutoresizingMaskIntoConstraints="NO" id="4Xp-Lt-VRY">
+                                            <slider opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="100" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="4Xp-Lt-VRY">
                                                 <rect key="frame" x="0.0" y="65" width="118" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <connections>
                                                     <action selector="sliderAction:" destination="XMp-tR-PrX" eventType="valueChanged" id="hXr-Hu-6t4"/>
                                                 </connections>
                                             </slider>
-                                            <slider opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="100" minValue="0.0" maxValue="254" translatesAutoresizingMaskIntoConstraints="NO" id="rPQ-np-eDY">
+                                            <slider opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="100" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="rPQ-np-eDY">
                                                 <rect key="frame" x="0.0" y="102" width="118" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <connections>
                                                     <action selector="sliderAction:" destination="XMp-tR-PrX" eventType="valueChanged" id="9aH-Kn-6Wl"/>
                                                 </connections>
                                             </slider>
-                                            <slider opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="100" minValue="0.0" maxValue="254" translatesAutoresizingMaskIntoConstraints="NO" id="3Zn-H3-NZV">
+                                            <slider opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="100" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="3Zn-H3-NZV">
                                                 <rect key="frame" x="0.0" y="132" width="118" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <connections>
                                                     <action selector="sliderAction:" destination="XMp-tR-PrX" eventType="valueChanged" id="at1-sa-ety"/>
                                                 </connections>
                                             </slider>
-                                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="100" minValue="0.0" maxValue="254" translatesAutoresizingMaskIntoConstraints="NO" id="z76-dN-HMa">
+                                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="100" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="z76-dN-HMa">
                                                 <rect key="frame" x="0.0" y="28" width="118" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <connections>
@@ -169,7 +169,7 @@
                                             <constraint firstAttribute="width" constant="170" id="sx1-gI-T0e"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4N3-ks-SXZ">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4N3-ks-SXZ" customClass="ColorPicker" customModule="ColorPaletteTest" customModuleProvider="target">
                                         <rect key="frame" x="8" y="16" width="204" height="186"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
@@ -215,8 +215,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="EmV-Ks-yOT"/>
                     </view>
+                    <navigationItem key="navigationItem" id="xSB-UO-5BA">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="QiI-IO-z70">
+                            <connections>
+                                <action selector="doneAction:" destination="XMp-tR-PrX" id="akh-Cv-jqC"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="colorNewView" destination="2OC-pq-efe" id="K1g-mI-dig"/>
+                        <outlet property="colorPicker" destination="4N3-ks-SXZ" id="2H0-vn-OyR"/>
                         <outlet property="colorStateView" destination="8XS-h7-5Qa" id="Hf3-OS-tfR"/>
                         <outlet property="labelA" destination="IjW-q4-BmV" id="Mhg-Mn-pRx"/>
                         <outlet property="labelB" destination="fug-Ev-WIu" id="pof-9F-d7B"/>
